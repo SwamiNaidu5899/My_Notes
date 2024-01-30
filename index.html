@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js-Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+            <div class="col-topics">
+                <button onclick="topic1()">Introduction</button>
+                <button onclick="topic2()">Variables</button>
+                <button onclick="topic3()">Var</button>
+                <button onclick="topic4()">Datatypes & Operators</button>
+            </div>
+            <div class="col-description">
+                <div id="topic-1" class="row-intro">
+                    <h3>What is javascript?</h3>
+                    <p>
+                        javascript is a high-level , interpreted programming language.
+                         It executes line by line that's why this is called <span>singles threaded language</span>.
+                         It will do run time assignments.
+                    </p>
+                    <h3></h3>
+               </div>
+
+                <div style="display: none;" id="topic-2" class="row-variable">
+                    <h3>What is a variable?</h3>
+                    <p>
+                        A variable is a container for a value, like a number we might use in a sum or
+                         a string that we might use as a part of a sentence.
+                         <p>They are 3 types..</p>
+                        <ul>
+                            <li>Var</li>
+                            <li>Let</li>
+                            <li>Const</li>
+                        </ul>
+                        <ol>
+                            <li>
+                                <h3>Declaration</h3>
+                                <p>It refers to the process of introducing a variable to the JS interpreter</p>
+                                <p>It involves specifying the variable name using a keyword like 'var', 'let' and 'const'</p>
+                                <p>Ex: 
+                                    <p>
+                                        <ul>
+                                            <li>var x;</li>
+                                        <li>let y;</li>
+                                        <li>const z;</li>
+                                        </ul>
+                                    </p>
+                                </p>
+                            </li>
+
+                            <li>
+                                <h3>Initialization</h3>
+                                <p>It is the process of giving an value to a variable at the time of declaration or later in the program</p>
+                                <p>Variable can be declared without being initialized. In such cases, they hold <span>Undefined</span> value until a value is assign to them. </p>
+                                <p>EX:</p>
+                                <p>var x = 5; Declaration & Initialization</p>
+                                <p>let y; Declaration</p>
+                                <p>y=6; Initialization</p>
+                                <p>Const = "Hello" (const variables must be initialized when declared)</p>
+                            </li>
+
+                            <li>
+                                <h3>Assignment</h3>
+                                <p>It involves updating the value of an already declared variable</p>
+                                <p>Ex:</p>
+                                <p>var x = 5;</p>
+                                <p>x = 10;</p>
+                            </li>
+
+                            <li>
+                                <h3>Hoisting</h3>
+                                <p>
+                                    Hoisting means that variable declarations are hoisted to the top of their scope during the compilation phase,
+                                    while the assignments (Initializations) remains in place.
+                                </p>
+                            </li>
+                        </ol>
+                    </p>
+                       
+                </div>
+
+                <div style="display: none;" id="topic-3" class="row-var">
+                    <h3>What is var key word in javascript?</h3>
+                    <p>
+                        The var key word is used to declare variables.
+                        It was the original way to declare variables in JS before 
+                        the introduction of "let" and "const" in ECMAScript(ES6)
+
+                        <p>var x = 5;</p>
+
+                        Variable declare with var are function-scoped or globally scoped, which 
+                        means they are accessible within the function or globally if declare outside of any function.
+                        <p>One important characterstic of var-decalared variable is that they have "Hoisting" behavior. 
+                            This means that variable declarations are hoisted to the top of their scope during the compilation phase </p> 
+                    </p>
+                </div>
+
+                <div class="row-dt-op" style="display: none;" id="topic-4">
+                    <h3>Datatypes</h3>
+                    <p>Datatypes are two types</p>
+                    <p>Data types describe the different types or kinds of data that we're gonna be working with and storing in variables</p>
+                    <p>
+                        <ol>
+                            <li>Primitive datatypes</li>
+                            <li>Non-Primitive datatypes</li>
+                        </ol>
+                    </p>
+                    <p>
+                        <li>Primitive Datatypes</li>
+                    </p>
+                    <p>
+                        <li>
+                            Stored by value
+                        </li>
+                    </p>
+                </div>
+            </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
